@@ -1,0 +1,120 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/soccerfeed/components/magnific-popup/dist/magnific-popup.css">
+    <link rel="shortcut icon" href="/soccerfeed/images/football.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/soccerfeed/css/style.css">
+    <meta property="og:title" content="Soccer | Passion has its place"/>
+    <meta name="theme-color" content="#F95F80"> <!-- Theme color in chrome android-->
+</head>
+<body>
+<div class="container-fluid">
+    <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header">
+
+    </div>
+    <div class="mobile-navbarfix">
+        <nav class="navbar navbar-default visible-xs" >
+            <div class="container">
+                <button style="border-color:transparent; float: none; "  class="navbar-toggle "  data-target="#myNavbar" aria-pressed="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <ul class="nav-primary" id="myNavbar">
+                    {{#each categories}}
+                        anirudh
+                        <li {{#ifCond this.categoryname '==' "Newsfeed"}}class="active"{{/ifCond}}class="menu-item" >
+                            <a href="{{link}}"><span>{{categoryname}}</span></a>
+                            {{#if subcategory}}
+                                <button style="position: absolute;right:2px; border-color: transparent;font-size: 22px" class="sub-menu"  aria-pressed="false"></button>{{/if}}
+                            <ul class="sub-menu-list" style="display: none;">
+                                {{#each subcategory}}
+                                    <li class="sub-menu-item" >
+                                        <a style="color:#fd4c8c;font-family:'Open Sans'; font-weight: 600; font-size: 13px" href="{{link}}">{{name}}</a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </nav>
+        <!----></div>
+
+
+    <div class="navbarfix hidden-xs">
+        <nav class="navbar navbar-default hidden-xs ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <!---->
+                        <!---->
+                        {{#each categories}}
+                            hello
+
+                            <div class="primary-menu ">
+                                <div class="category active">
+                                    <li {{#ifCond this.categoryname '==' "Newsfeed"}} class="active"{{/ifCond}}>
+                                        <a href="{{link}}">{{categoryname}}</a>
+                                    </li>
+                                    <ul>
+
+                                        <div class="subcategory">
+                                            {{#each subcategory}}
+                                                <li> <a href="{{link}}">{{name}}</a> </li>
+                                            {{/each}}
+                                        </div>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        {{/each}}
+                    </ul>
+                </div>
+            </div><!--/.nav-collapse -->
+
+        </nav>
+    </div>
+
+    <div>
+        {{{body}}}
+    </div>
+</div>
+<script src="/soccerfeed/components/jquery/dist/jquery.js"></script>
+<script src="/soccerfeed/components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="/soccerfeed/js/babygogo.js"></script>
+
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/soccerfeed/components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+</body>
+</html>

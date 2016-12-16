@@ -1,0 +1,21 @@
+{
+  "name": "express-generator",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "magnific-popup": "^1.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  }
+}

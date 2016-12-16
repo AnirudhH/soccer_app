@@ -1,0 +1,208 @@
+$icon-font-path: '../fonts/';
+//$primary-color: #F95F80;
+$secondary-color: #1fbfa5;
+$palette-light-grey: #a9a9a9;
+$palette-dark-grey: #353535;
+$palette-pink: #fd4c8c;
+//$font-family-open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-family-title: 'Hind', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-open-sans: 'Open Sans';
+
+// bower:scss
+@import "public/components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Hind:400,500,600);
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding-bottom: 20px;
+  background-color: #eeeeee;
+}
+.header {
+  background: url(/soccerfeed/images/soccer.png) no-repeat left;
+  background-size: 100%;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.navbar {
+  .nav-primary a{
+    display: inline-block;
+  }
+  border-top: 2px solid #00b3ee;
+  border-bottom: 2px solid #00b3ee;
+  clear: both;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+  background-color:#fff;
+}
+
+.mobile-navbar {
+  border-top: 2px solid #00b3ee;
+  border-bottom: 2px solid #00b3ee;
+  clear: both;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  width: 100%;
+  text-align: left;
+  background-color:#fff;
+}
+.navbar {
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  ul {
+    text-align: center;
+  }
+  li {
+    text-align: left;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: $palette-dark-grey;
+    font-family: $font-family-open-sans;
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 1.6rem;
+    display: block;
+    padding: 14px 24px;
+    text-transform: uppercase;
+
+  }
+  a:hover {
+    color: $palette-pink;
+    //    border-bottom: 4px solid $palette-pink;
+  }
+  li.active a{
+    color: $palette-pink;
+    //    border-bottom: 4px solid $palette-pink;
+  }
+}
+
+li.active a{
+  color: $palette-pink;
+}
+li.active_article a{
+  color:$palette-dark-grey;
+}
+li{
+  list-style: none;
+}
+
+/* Dropdown Menu */
+.category {
+  line-height: 1;
+  width: 100%;
+  text-align: left;
+}
+
+.container-fluid {
+  padding: 0px;
+  background-color: #f6f6f6;
+}
+
+.container {
+  b {
+    font-size: small;
+    font-weight: bold;
+  }
+}
+
+/* The container <div> - needed to position the dropdown content */
+.primary-menu {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+
+  ul{
+    margin-left: -40px;
+  }
+}
+.mobile-menu{
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  ul{
+    margin-left: 0px;
+  }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.subcategory {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 100;
+}
+
+/* Links inside the dropdown */
+.subcategory a {
+  color: $palette-pink;
+  width: 151px;
+  border: 1px solid #eee;
+  border-top: 0;
+  font-family: $font-family-open-sans;
+  background-color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 0.82em;
+}
+
+/* Change color of dropdown links on hover */
+.subcategory a:hover {background-color: $palette-pink; color:#fff;}
+
+/* Show the dropdown menu on hover */
+.primary-menu:hover .subcategory {
+  display: block;
+  background-color: #f5f5f5;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.primary-menu:hover .category {
+  color: $palette-pink;
+}
+
+.sidebar{
+  background-color: #ccc;
+  border-color:$palette-light-grey;
+  box-shadow:$palette-light-grey;
+  border: 1px;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.sidebar-widget{
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    //    max-width: 730px;
+  }
+
+
+  /* Remove the padding we set earlier */
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}

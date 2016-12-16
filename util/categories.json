@@ -1,0 +1,7 @@
+
+[
+  { "categoryname": "Home", "link":"/", "subcategory":[]},
+  { "categoryname": "Competitions", "link":"/leagues", "subcategory":[]},
+  { "categoryname": "Standings", "link":"/standings", "subcategory":[]},
+  { "categoryname": "Fixtures", "link":"/fixtures", "subcategory":[]}
+]
