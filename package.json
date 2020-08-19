@@ -11,7 +11,7 @@
     "express-slash": "~2.0.1",
     "express-useragent": "^1.0.0",
     "handlebars": "~4.7.2",
-    "lodash": "~4.14.1",
+    "lodash": "~4.17.20",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
