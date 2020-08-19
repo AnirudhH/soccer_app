@@ -10,7 +10,7 @@
     "bluebird": "^3.4.6",
     "express-slash": "~2.0.1",
     "express-useragent": "^1.0.0",
-    "handlebars": "~4.0.5",
+    "handlebars": "~4.7.2",
     "lodash": "~4.14.1",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
